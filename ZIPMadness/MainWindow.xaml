@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ZIPMadness"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="ZIPMadness" Height="403.693" Width="708.949">
+    <Grid Background="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}" Margin="0,0,0,-3">
+        <TextBlock x:Name="infoText" HorizontalAlignment="Left" Margin="17,26,0,0" TextWrapping="Wrap" Text="Select File(s) or Folder to compress:" VerticalAlignment="Top" Width="491" Height="24"/>
+        <TextBox x:Name="txtItemsToCompress" HorizontalAlignment="Left" IsEnabled="False" Height="65" Margin="17,51,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="492"/>
+        <Button x:Name="btnFiles" Content="File(s)" HorizontalAlignment="Left" Margin="349,122,0,0" VerticalAlignment="Top" Width="75" Click="btnFiles_Click"/>
+        <Button x:Name="btnFolder" Content="Folder" HorizontalAlignment="Left" Margin="434,122,0,0" VerticalAlignment="Top" Width="75" Click="btnFolder_Click"/>
+        <Button x:Name="btnCreate" Content="Create" HorizontalAlignment="Left" Margin="535,52,0,0" VerticalAlignment="Top" Width="117" Click="btnCreate_Click"/>
+        <Button x:Name="btnOpen" Content="Open" HorizontalAlignment="Left" Margin="537,179,0,0" VerticalAlignment="Top" Width="116" Click="btnOpen_Click"/>
+        <TextBox x:Name="txtExtractLocation" HorizontalAlignment="Left" IsEnabled="False" Height="23" Margin="20,327,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="493"/>
+        <Button x:Name="btnExtract" Content="Extract" HorizontalAlignment="Left" Margin="538,328,0,0" VerticalAlignment="Top" Width="113" Click="btnExtract_Click"/>
+        <ListBox x:Name="lbContains" HorizontalAlignment="Left" Height="112" Margin="20,184,0,0" VerticalAlignment="Top" Width="492"/>
+        <TextBlock x:Name="txtContains" HorizontalAlignment="Left" Margin="19,157,0,0" TextWrapping="Wrap" Text="Zip file contains the following files:" VerticalAlignment="Top" Width="486"/>
+        <TextBlock x:Name="txtExtract" HorizontalAlignment="Left" Margin="18,304,0,0" TextWrapping="Wrap" Text="Zip file to extract files from:" VerticalAlignment="Top" Width="492"/>
+
     </Grid>
 </Window>
